@@ -1,0 +1,136 @@
+@media (max-width: 1020px) {
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+            #nav-drawer{
+                display: block;
+            }
+        }
+    }
+  }
+@media(max-width: 560px){
+    html{
+        font-size: 13px;
+    }
+    main{
+        .main-container{
+            .main-text{
+                width: 25rem;
+                height: 15rem;
+                h1{
+                    font-size: 2rem;
+                    span{
+                        font-size: 2.5rem;
+                    }
+                }
+                h2{
+                    font-size: 1.2rem;    
+                }
+            }
+        }
+    }
+    .service{
+        .service-strength{
+            .strength-contents{
+                flex-direction: column;
+                .strength-content{
+                    margin: 20px auto;
+                    width: 80%;
+                    span{
+                        font-size: 1.4rem;
+                    }
+                }
+             } 
+        }
+        .service-feature{
+            height: 1600px;
+            .feature-contents{
+                flex-direction: column;
+                .feature-content{
+                    margin: 0 auto;
+                    width: 80%;
+                    position: static;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+        .reason{
+            .reason-contents{
+                flex-direction: column;
+                height: 150rem;
+                margin: 0 auto;
+                .reason-content{
+                    margin: 0 auto;
+                    width: 80%;
+                    position: static;
+                    h3{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                    img{
+                        margin-top: 20px;
+                        height: 14rem;
+                    }
+                }
+                .reason-text{
+                    margin-bottom: 20px;
+                    height: 27rem;
+                }
+            }
+        }
+    }
+    .matter{
+        height: 70rem;
+        .matter-contents{
+            font-size: 14px;
+            .matter-content{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .user{
+        height: 140rem;
+        .user-contents{
+            .user-content{
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                height: 39rem;
+            }
+        }
+    }
+    .flow{
+        height: 140rem;
+      .flow-contents{
+          .flow-content{
+              width: 90%;
+              height: 18rem;
+              margin: 20px auto;
+              h3{
+                  padding-bottom: 0;
+              }
+          }
+        }  
+    }
+    .question{
+        height: 130rem;
+    }
+    .form{
+        height: 80rem;
+        .form-contents{
+            height: 60rem;
+            flex-direction: column;
+            .form-input{
+                width: 80%;
+            }
+            .form-text{
+                width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/**
+ * モーダルウィンドウ用cssファイル
+**/
+/* 送信確認画面 */
+#pum-47 {
+    background: rgba(0,0,0,0.8);
+}
+.pum-close {
+    display: none;
+}
+#popmake-47 {
+    width: 50%;
+    height: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#pum_popup_title_47 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #009DCF;
+    margin: 20px 0;
+}
+
+.pum-content table{
+    color: #333333;
+    margin: 0 auto;
+    border-collapse:collapse;
+    width: 90%;
+}
+
+.pum-content th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 6%;
+    width: 35%;
+
+}
+.pum-content td {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 25px;
+    width: 60%;
+    
+}
+.pum-content tr {
+    border-width: 1px 0px; /* 上下だけ引く */
+    border-color: #E0E0E0;
+    border-style: solid; 
+    padding: 0.3em; /* セル内側の余白 */
+}
+/* ボタン */
+.pum-content p {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 20%;
+
+}
+.pum-content input {
+    width: 110px;
+    height: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    margin: 0 5%;
+}
+#pop-cancel { /* 修正ボタン */
+    background-color: #C4C4C4;
+    outline: none;
+}
+#pop-cancel:hover {
+    background: #fff;
+    color: #C4C4C4;
+    border: 2px solid #C4C4C4;
+}
+#pop-submit { /*送信ボタン */
+    background-color: #009DCF;
+    outline: none;
+}
+#pop-submit:hover {
+    background: #fff;
+    color: #009DCF;
+    border: 2px solid #009DCF;
+}
+
+/* 送信完了画面 */
+#pum-52 {
+    background: rgba(0,0,0,0.8);
+}
+#popmake-52 {
+    width: 40%;
+}
+#popmake-52 .pum-content p {
+    color: #333333;
+    margin: 3vh 0;
+}
+#pop-cancel {  /* 閉じるボタン */
+    background-color: #009DCF;
+    outline: none;
+}
+#pop-cancel:hover {
+    background: #fff;
+    color: #009DCF;
+    border: 2px solid #009DCF;
+}
+#popmake-52 input {
+    margin-top: 2vh;
+}
+
+
+

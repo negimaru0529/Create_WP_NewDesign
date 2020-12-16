@@ -1,0 +1,19 @@
+/**
+ * エラーメッセージ用css
+**/
+div.screen-reader-response{
+    display: none;
+}
+.wpcf7-response-output {
+    visibility:hidden;
+}
+
+.wpcf7-not-valid-tip {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-815 {
+    margin: 0;
+}

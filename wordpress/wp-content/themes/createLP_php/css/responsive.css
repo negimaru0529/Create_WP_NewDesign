@@ -1,0 +1,132 @@
+@media (max-width: 1020px) {
+  header nav ul {
+    display: none;
+  }
+  header nav #nav-drawer {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  html {
+    font-size: 13px;
+  }
+  main .main-container .main-text {
+    width: 25rem;
+    height: 15rem;
+  }
+  main .main-container .main-text h1 {
+    font-size: 2rem;
+  }
+  main .main-container .main-text h1 span {
+    font-size: 2.5rem;
+  }
+  main .main-container .main-text h2 {
+    font-size: 1.2rem;
+  }
+  .service .service-strength .strength-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service .service-strength .strength-contents .strength-content {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .service .service-strength .strength-contents .strength-content span {
+    font-size: 1.4rem;
+  }
+  .service .service-feature {
+    height: 1600px;
+  }
+  .service .service-feature .feature-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service .service-feature .feature-contents .feature-content {
+    margin: 0 auto;
+    width: 80%;
+    position: static;
+    margin-bottom: 100px;
+  }
+  .service .reason .reason-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 150rem;
+    margin: 0 auto;
+  }
+  .service .reason .reason-contents .reason-content {
+    margin: 0 auto;
+    width: 80%;
+    position: static;
+  }
+  .service .reason .reason-contents .reason-content h3 {
+    font-size: 16px;
+  }
+  .service .reason .reason-contents .reason-content p {
+    font-size: 13px;
+  }
+  .service .reason .reason-contents .reason-content img {
+    margin-top: 20px;
+    height: 14rem;
+  }
+  .service .reason .reason-contents .reason-text {
+    margin-bottom: 20px;
+    height: 27rem;
+  }
+  .matter {
+    height: 70rem;
+  }
+  .matter .matter-contents {
+    font-size: 14px;
+  }
+  .matter .matter-contents .matter-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .user {
+    height: 140rem;
+  }
+  .user .user-contents .user-content {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 39rem;
+  }
+  .flow {
+    height: 140rem;
+  }
+  .flow .flow-contents .flow-content {
+    width: 90%;
+    height: 18rem;
+    margin: 20px auto;
+  }
+  .flow .flow-contents .flow-content h3 {
+    padding-bottom: 0;
+  }
+  .question {
+    height: 130rem;
+  }
+  .form {
+    height: 80rem;
+  }
+  .form .form-contents {
+    height: 60rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .form-contents .form-input {
+    width: 80%;
+  }
+  .form .form-contents .form-text {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
