@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Noto Sans JP", "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.3px;
   color: #222222;
 }
@@ -26,12 +26,12 @@ p {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -45,14 +45,15 @@ a {
 }
 
 /*  色の変数 */
-.color-blue {
-  color: #22C3F6;
+.color-main {
+  color: #1EB5A3;
   padding-left: 3.5rem;
   margin-bottom: 1.875rem;
   position: relative;
+  font-size: 25px;
 }
 
-.color-blue::before {
+.color-main::before {
   content: "";
   display: block;
   width: 2.8rem;
@@ -60,7 +61,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #22C3F6;
+  background-color: #1EB5A3;
 }
 
 .flex {
@@ -72,55 +73,81 @@ a {
 /* ヘッダーのCSS*/
 header {
   width: 100%;
-  height: 3.1rem;
+  height: 5rem;
   background-color: #fff;
   position: fixed;
   z-index: 99999;
+  font-size: 12px;
 }
 
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 3.125rem;
+  line-height: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+header nav .logo {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.2rem 3rem;
+}
+
+header nav .logo img {
+  width: 40%;
+  height: 70%;
+}
+
+header nav .logo p {
+  width: 50%;
+  height: 100%;
+  padding: 0.4rem;
+  line-height: 1rem;
+  font-size: 12px;
+  color: #1EB5A3;
+}
+
 header nav a {
   font-size: 1rem;
   font-weight: 500;
-  color: #22C3F6;
 }
 
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 70%;
+  width: 60%;
   text-align: center;
 }
 
 header nav ul li {
-  width: 17%;
-  font-size: 1rem;
+  width: 15%;
   font-weight: 500;
 }
 
 header nav ul li a {
   color: #222222;
+  font-size: 12px;
 }
 
 header nav ul .form-tab {
-  display: block;
+  width: 10rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5rem;
+  line-height: 1rem;
+  display: inline-block;
   text-align: center;
-  height: 3.125rem;
-  background-color: #22C3F6;
+  margin: 0.5rem;
+  background-color: #E994C7;
   color: white;
+  border-radius: 5px;
 }
 
 header nav #nav-drawer {
@@ -136,40 +163,15 @@ main {
 }
 
 main .main-container {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
   padding-top: 5rem;
 }
 
-main .main-container h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #22C3F6;
-}
-
-main .main-container h1 {
-  margin-top: 1rem;
-  font-weight: 500;
-  color: #000;
-}
-
-main .main-container h1 .span1 {
-  font-size: 5rem;
-}
-
-main .main-container h1 .span2 {
-  font-size: 2.5rem;
-}
-
-main .main-container .main-box {
-  width: 100%;
-  margin-top: 2.5rem;
-}
-
-main .main-container .main-box .box-item1 {
-  width: 15.6rem;
-  height: 5rem;
-  border: 1px solid #22C3F6;
+main .main-container .box-item {
+  width: 18.75rem;
+  height: 6.25rem;
+  border: 1px solid white;
   border-radius: 10px;
   text-align: center;
   -webkit-box-align: center;
@@ -178,80 +180,116 @@ main .main-container .main-box .box-item1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #22C3F6;
-  background-color: white;
-}
-
-main .main-container .main-box .box-item1 p {
-  display: inline-block;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-main .main-container .main-box .box-item1 p .span3 {
-  font-size: 1.9rem;
-}
-
-main .main-container .main-box .box-item1 .box-num {
-  font-size: 2.8rem;
-  font-weight: 500;
-  line-height: 5rem;
-  margin-left: 10px;
-}
-
-main .main-container .main-box .box-item2 {
-  width: 22rem;
-  height: 5rem;
-  border: 1px solid #22C3F6;
-  border-radius: 10px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #22C3F6;
-  background-color: white;
-  margin-left: 1.5rem;
-}
-
-main .main-container .main-box .box-item2 p {
-  display: inline-block;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-main .main-container .main-box .box-item2 p .span3 {
-  font-size: 1.9rem;
-}
-
-main .main-container .main-box .box-item2 .box-num {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-left: 10px;
-}
-
-main .main-container .main-text {
-  font-size: 2.2rem;
-  font-weight: 500;
-  width: 30rem;
-  height: 5rem;
-  border-radius: 10px;
-  background-color: #22C3F6;
   color: white;
+  margin-top: 3.125rem;
+}
+
+main .main-container .box-item p {
+  display: inline-block;
+  font-weight: 500;
+}
+
+main .main-container .box-item p .span3 {
+  font-size: 3rem;
+}
+
+main .main-container .box-item .box-icon {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+main .main-container .main-header {
+  width: 32.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 20px;
+  vertical-align: auto;
+  margin-top: 4rem;
+}
+
+main .main-container .main-header h1 {
+  font-size: 20px;
   text-align: center;
-  margin-top: 1.9rem;
-  padding-top: 0.75rem;
+  color: #1EB5A3;
+  padding-top: 0.3rem;
+}
+
+main .main-container h2 {
+  font-size: 2.625rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 1rem;
+}
+
+main .main-container .main-btn {
+  width: 25rem;
+  margin-top: 2.5rem;
+  background-color: #E994C7;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+main .main-container .main-btn .flex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .main-container .main-btn .flex .main-text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+main .main-container .main-btn .flex .main-text span {
+  font-size: 24px;
+}
+
+main .main-container .main-btn .flex .main-text-right {
+  font-size: 20px;
+  padding-top: 0.8rem;
+}
+
+/* 詳細部のCSS */
+.detail {
+  width: 100%;
+  height: 16.25rem;
+  background-color: #fafafa;
+}
+
+.detail .detail-container {
+  width: 85%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.detail .detail-container .detail-items {
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1.5rem;
+  margin: 0 auto;
+}
+
+.detail .detail-container .detail-items .detail-item .detail-text {
+  font-size: 32px;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.detail .detail-container .detail-items .detail-item .detail-text span {
+  color: #1EB5A3;
 }
 
 /* サービス部（強み・特徴・理由）のCSS */
 .service {
   width: 100%;
-  height: 219rem;
+  height: 56.25rem;
   margin: 0 auto;
   /*　強みのCSS */
-  /*特徴のCSS*/
 }
 
 .service .service-strength {
@@ -288,315 +326,21 @@ main .main-container .main-text {
 
 .service .service-strength .strength-contents .strength-content p {
   vertical-align: middle;
-  font-size: 1.56rem;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .service .service-strength .strength-contents .strength-content span {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 500;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(50%, #A7EAFF));
-  background: linear-gradient(transparent 55%, #A7EAFF 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, transparent), color-stop(50%, #8FDAD1));
+  background: linear-gradient(transparent 55%, #8FDAD1 50%);
 }
 
 .service .service-strength .strength-contents .strength-content img {
   width: 3.8rem;
   height: 3.8rem;
   margin: 0.1rem 4rem;
-}
-
-.service .service-strength .strength-button {
-  width: 32.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  padding-top: 5.625rem;
-}
-
-.service .service-strength .strength-button .button-blue {
-  height: 4rem;
-  width: 15.62rem;
-  background-color: #22C3F6;
-  color: white;
-  padding: 17px 0;
-  text-align: center;
-  border-radius: 10px;
-  margin-right: 0;
-}
-
-.service .service-strength .strength-button .button-white {
-  height: 4rem;
-  width: 13.75rem;
-  border: solid 1px #22C3F6;
-  color: #22C3F6;
-  padding: 1rem 0;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 3.1rem;
-}
-
-.service .service-feature {
-  padding-top: 4.7rem;
-  height: 170rem;
-}
-
-.service .service-feature .feature {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.service .service-feature .feature .feature-contents {
-  width: 90%;
-  height: 100rem;
-  margin: 0 auto;
-  padding-top: 5rem;
-}
-
-.service .service-feature .feature .feature-contents .feature-content {
-  width: 100%;
-  height: 24rem;
-  margin-bottom: 6.3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.service .service-feature .feature .feature-contents .feature-content img {
-  width: 50%;
-  height: 24rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-}
-
-.service .service-feature .feature .feature-contents .feature-content .feature {
-  line-height: 2.5rem;
-  width: 45%;
-  margin: 0;
-}
-
-.service .service-feature .feature .feature-contents .feature-content .feature h3 {
-  margin-bottom: 2.5rem;
-}
-
-.service .service-feature .feature .feature-contents .feature-content .feature .point {
-  color: #22C3F6;
-  position: relative;
-  margin-bottom: 0.6rem;
-}
-
-.service .service-feature .feature .feature-contents .feature-content .feature .point::after {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 0.1px;
-  background-color: #22C3F6;
-  position: absolute;
-  bottom: 0.5rem;
-  left: 6rem;
-}
-
-.service .service-feature .feature .feature-contents .feature2 {
-  line-height: 2.5rem;
-}
-
-.service .service-feature .feature .feature-contents .feature2 h3 {
-  text-align: left;
-  border-bottom: 1px solid #4f4f4f;
-  margin-bottom: 1.825rem;
-  font-size: 1.56rem;
-}
-
-.service .service-feature .feature .feature-contents .feature2 p {
-  font-size: 20px;
-}
-
-.service .service-feature .feature .feature-contents .feature3 {
-  line-height: 2.5rem;
-}
-
-.service .service-feature .feature .feature-contents .feature3 h3 {
-  text-align: left;
-  border-bottom: 1px solid #4f4f4f;
-  margin-bottom: 1.825rem;
-  font-size: 25px;
-}
-
-.service .service-feature .feature .feature-contents .feature3 p {
-  font-size: 20px;
-}
-
-.banner {
-  width: 100%;
-  height: 24rem;
-  background-image: url(../IMAGE/banner.png);
-  background-size: cover;
-}
-
-.banner .banner-text {
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  color: white;
-  padding-top: 60px;
-}
-
-.banner .banner-text h2 {
-  font-size: 35px;
-}
-
-.banner .banner-text p {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 18px;
-}
-
-.banner .banner-text a {
-  display: block;
-  color: white;
-  width: 250px;
-  height: 60px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 15px 30px;
-}
-
-/* 選ばれた理由のCSS*/
-.reason {
-  width: 100%;
-  height: 121.875rem;
-  background-color: #f9f9f9;
-  padding-top: 4.7rem;
-}
-
-.reason .reason-header {
-  width: 80%;
-  height: 10rem;
-  margin: 0 auto;
-  margin-bottom: 3.125rem;
-}
-
-.reason .reason-container {
-  width: 90%;
-  height: 100rem;
-}
-
-.reason .reason-container .reason-content {
-  width: 100%;
-  height: 31.25rem;
-  background-color: white;
-  margin-bottom: 3.125rem;
-  position: relative;
-}
-
-.reason .reason-container .reason-content .header1 {
-  font-size: 80px;
-  position: absolute;
-  top: -4%;
-  right: 5%;
-  color: #22C3F6;
-}
-
-.reason .reason-container .reason-content .header2 {
-  font-size: 80px;
-  position: absolute;
-  top: -2%;
-  left: 5%;
-  color: #22C3F6;
-}
-
-.reason .reason-container .reason-content .header3 {
-  font-size: 80px;
-  position: absolute;
-  top: -2%;
-  right: 8%;
-  color: #22C3F6;
-}
-
-.reason .reason-container .reason-content .content-container {
-  width: 80%;
-  height: 90%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 50px;
-  margin: 0 auto;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text {
-  width: 50%;
-  line-height: 30px;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text h3 {
-  color: #22C3F6;
-  font-weight: medium;
-  margin-bottom: 100px;
-  font-size: 30px;
-  line-height: 45px;
-  position: relative;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text h3::after {
-  content: "";
-  display: block;
-  width: 20%;
-  height: 0.1px;
-  background-color: #22C3F6;
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text2 {
-  width: 50%;
-  line-height: 30px;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text2 h3 {
-  color: #22C3F6;
-  font-weight: medium;
-  margin-bottom: 100px;
-  font-size: 30px;
-  line-height: 45px;
-  position: relative;
-}
-
-.reason .reason-container .reason-content .content-container .reason-text2 h3::after {
-  content: "";
-  display: block;
-  width: 20%;
-  height: 0.1px;
-  background-color: #22C3F6;
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-}
-
-.reason .reason-container .reason-content .content-container .img-size1 {
-  width: 35%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-}
-
-.reason .reason-container .reason-content .content-container .img-size2 {
-  width: 35%;
-  height: 24rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-}
-
-.reason .reason-container .reason-content .content-container .img-size3 {
-  width: 30%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
 }
 
 /* 求人掲載欄のCSS*/
@@ -627,7 +371,7 @@ main .main-container .main-text {
 .matter .matter-header .matter-button .button-blue {
   height: 4rem;
   width: 15.62rem;
-  background-color: #22C3F6;
+  background-color: #1EB5A3;
   color: white;
   padding: 17px 0;
   text-align: center;
@@ -734,6 +478,299 @@ main .main-container .main-text {
   padding: 0;
 }
 
+/* valueのCSS */
+.value {
+  height: 56.8rem;
+  background-color: #fafafa;
+}
+
+.value .value-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 6.25rem;
+}
+
+.value .value-container .value-items {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7.125rem;
+  line-height: 2rem;
+}
+
+.value .value-container .value-items .value-item {
+  width: 25%;
+  text-align: center;
+}
+
+.value .value-container .value-items .value-item img {
+  margin: 0 auto;
+}
+
+.value .value-container .value-items .value-item .item-header {
+  color: #1EB5A3;
+  margin-bottom: 2.25rem;
+}
+
+.value .value-container .value-items .value-item .item-text {
+  text-align: left;
+}
+
+/* 転職の流れ */
+.flow {
+  width: 100%;
+  height: 90.625rem;
+}
+
+.flow .flow-header {
+  width: 80%;
+  height: 10rem;
+  margin: 0 auto;
+  padding-top: 3.8rem;
+  margin-bottom: 6.5rem;
+}
+
+.flow .flow-header h2 {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.flow .flow-contents {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 6.9rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flow .flow-contents .flow-content {
+  width: 30%;
+  height: 14rem;
+  margin-bottom: 6.25rem;
+}
+
+.flow .flow-contents .flow-content .flow-text h3 {
+  margin-bottom: 2rem;
+}
+
+.flow .flow-contents .flow-content .flow-text h3 span {
+  color: #1EB5A3;
+}
+
+.flow .flow-contents .flow-content .flow-text p {
+  line-height: 2rem;
+}
+
+.flow .banner {
+  width: 90%;
+  height: 23.4rem;
+  background-image: url(../IMAGE/banner.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.flow .banner .banner-text {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  color: white;
+  padding-top: 60px;
+}
+
+.flow .banner .banner-text h2 {
+  font-size: 64px;
+  color: #1EB5A3;
+}
+
+.flow .banner .banner-text h3 {
+  font-size: 36px;
+  color: #1EB5A3;
+}
+
+.flow .banner .banner-text p {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 18px;
+}
+
+.flow .banner .banner-text a {
+  display: block;
+  color: white;
+  background-color: #E994C7;
+  width: 20rem;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* 選ばれた理由のCSS*/
+.reason {
+  width: 100%;
+  height: 121.875rem;
+  background-color: #f9f9f9;
+  padding-top: 4.7rem;
+}
+
+.reason .reason-header {
+  width: 80%;
+  height: 10rem;
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+}
+
+.reason .reason-container {
+  width: 90%;
+  height: 100rem;
+}
+
+.reason .reason-container .reason-content {
+  width: 100%;
+  height: 31.25rem;
+  background-color: white;
+  margin-bottom: 3.125rem;
+  position: relative;
+}
+
+.reason .reason-container .reason-content .header1 {
+  font-size: 80px;
+  position: absolute;
+  top: -4%;
+  right: 5%;
+  color: #8FDAD1;
+}
+
+.reason .reason-container .reason-content .header2 {
+  font-size: 80px;
+  position: absolute;
+  top: -2%;
+  left: 5%;
+  color: #8FDAD1;
+}
+
+.reason .reason-container .reason-content .header3 {
+  font-size: 80px;
+  position: absolute;
+  top: -2%;
+  right: 8%;
+  color: #8FDAD1;
+}
+
+.reason .reason-container .reason-content .content-container {
+  width: 80%;
+  height: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text {
+  width: 45%;
+  line-height: 30px;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text h3 {
+  color: #1EB5A3;
+  font-weight: medium;
+  margin-bottom: 50px;
+  line-height: 45px;
+  position: relative;
+  margin-top: 7rem;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text h3::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 0.1px;
+  background-color: #1EB5A3;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text2 {
+  width: 45%;
+  line-height: 30px;
+  margin-right: 2rem;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text2 h3 {
+  color: #1EB5A3;
+  font-weight: medium;
+  margin-bottom: 100px;
+  line-height: 45px;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.reason .reason-container .reason-content .content-container .reason-text2 h3::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 0.1px;
+  background-color: #1EB5A3;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.reason .reason-container .reason-content .content-container .img-size1 {
+  width: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.reason .reason-container .reason-content .content-container .img-size2 {
+  width: 35%;
+  height: 24rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.reason .reason-container .reason-content .content-container .img-size3 {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.comparison {
+  width: 100%;
+  height: 56.25rem;
+}
+
+.comparison .comparison-header {
+  width: 80%;
+  height: 10rem;
+  margin: 0 auto;
+  padding-top: 3.8rem;
+  margin-bottom: 6.5rem;
+}
+
+.comparison .comparison-header h2 {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.comparison .comparison-img {
+  text-align: center;
+  padding-top: 6.875rem;
+}
+
+.comparison .comparison-img img {
+  height: 25rem;
+  width: 61.25rem;
+}
+
 /*userの声CSS*/
 .user {
   width: 100%;
@@ -773,7 +810,7 @@ main .main-container .main-text {
 
 .user .user-contents .user-content .user-headline {
   margin: 0 auto;
-  color: #22C3F6;
+  color: #1EB5A3;
   padding-top: 1.25rem;
   padding-bottom: 0.8rem;
 }
@@ -782,7 +819,7 @@ main .main-container .main-text {
   font-size: 0.88rem;
   padding-right: 1rem;
   padding-left: 1.56rem;
-  color: #00C2FF;
+  color: #1EB5A3;
 }
 
 .user .user-contents .user-content img {
@@ -804,67 +841,6 @@ main .main-container .main-text {
   letter-spacing: 0.3px;
   color: #4F4F4F;
   padding: 0.3rem 1.56rem;
-}
-
-/* 転職の流れ */
-.flow {
-  width: 100%;
-  height: 110rem;
-}
-
-.flow .flow-header {
-  width: 80%;
-  height: 10rem;
-  margin: 0 auto;
-  padding-top: 3.8rem;
-  margin-bottom: 6.9rem;
-}
-
-.flow .flow-header h2 {
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-}
-
-.flow .flow-contents {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 6.9rem;
-}
-
-.flow .flow-contents .flow-content {
-  width: 100%;
-  height: 14.7rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.flow .flow-contents .flow-content img {
-  display: block;
-  height: 50%;
-}
-
-.flow .flow-contents .flow-content .flow-text {
-  width: 70%;
-}
-
-.flow .flow-contents .flow-content .flow-text h3 {
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.flow .flow-contents .flow-content .flow-text h3::after {
-  content: "";
-  display: block;
-  width: 9rem;
-  height: 1px;
-  position: absolute;
-  bottom: -1rem;
-  background-color: #22C3F6;
-}
-
-.flow .flow-contents .flow-content .flow-text p {
-  font-size: 1rem;
-  line-height: 2rem;
 }
 
 /* よくある質問 */
@@ -905,8 +881,8 @@ main .main-container .main-text {
 }
 
 .question .question-contents .question-content .anser .icon-blue {
-  color: #22C3F6;
-  border: solid 1px #22C3F6;
+  color: #1EB5A3;
+  border: solid 1px #1EB5A3;
   text-align: center;
   border-radius: 8px;
   padding-top: 0.2rem;
@@ -1057,8 +1033,9 @@ main .main-container .main-text {
 
 footer {
   width: 100%;
-  height: 7.5rem;
-  background-color: #F9F9F9;
+  height: 12.5rem;
+  background-color: #1EB5A3;
+  color: white;
 }
 
 footer .footer-contents {
@@ -1074,5 +1051,24 @@ footer .footer-contents {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .footer-contents .footer-content-right {
+  width: 17.5rem;
+  height: 4.68rem;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-radius: 5px;
+}
+
+footer .footer-contents .footer-content-right a {
+  color: white;
+  font-weight: normal;
+}
+
+footer .footer-text {
+  text-align: center;
+  background-color: #1EB5A3;
 }
 /*# sourceMappingURL=style.css.map */

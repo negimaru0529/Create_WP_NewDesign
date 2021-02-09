@@ -7,13 +7,11 @@
                     茨城県つくば市小茎182-5
                 </p>
             </div>
-            <div class="footer-content">
-                <p>
-                    ロゴ<br>
-                    © Inc. All Rights Reserved.
-                </p>
+            <div class="footer-content-right">
+                <a href="">求人掲載希望のお客様はこちら</a>
             </div>
         </div>
+        <p class="footer-text">© asahi.Inc & wemotion.Inc. All Rights Reserved.</p>
         <?php wp_footer(); ?>
     </footer>    
     <script src="<?php echo get_template_directory_uri(); ?>/slick/slick.js"></script>

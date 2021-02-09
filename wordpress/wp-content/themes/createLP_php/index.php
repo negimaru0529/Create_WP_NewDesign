@@ -1,27 +1,50 @@
 <?php get_header(); ?>
     <main>
         <div class="main-container">
-        <h2>薬剤師転職エージェント</h2>
-            <h1> <span class="span1">薬局経営</span><br>
-                しているからできる<span class="span2">転職サポート</span></h1>
-            <div class="main-box flex">
-                <div class="box-item1 flex">
-                    <p>転職<br><span class="span3">満足度</span></p>
-                        <p class="box-num">96％</p>
-                </div>
-                <div class="box-item2 flex">
-                    <p><span class="span3">薬局オーナー</span><br>国内排出実績</p>
-                        <p class="box-num">No.1</p>
-                </div>
+            <div class="box-item flex">
+                <img class="box-icon" src="<?php echo get_template_directory_uri() ?>/IMAGE/money.png" alt="">
+                <p>転職祝い金プレゼント<br>最大    <span class="span3">30</span>    万円</p>
             </div>
-            <p class="main-text">転職祝い金最大30万円進呈</p>
+            <div class="main-header">
+                <h1>薬局グループが運営する薬剤師専門転職エージェント</h1>
+            </div>
+            <h2>希少な高年収求人を多数掲載</h2>
+            <div class="main-btn">
+                <a class="flex" href="#form-info">
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <p class="main-text">
+                        最短即日オンライン面談可能！<br>
+                        <span class="main-text2" >無料相談はこちらから</span>
+                    </p>
+                    <p class="main-text-right">></p>
+                </a>
+            </div>
         </div>
     </main>
+    <section class="detail">
+        <div class="detail-container">
+            <h3>薬転エージェントは薬剤師に特化した転職エージェントサービスです</h3>
+            <div class="detail-items flex">
+                <div class="detail-item">
+                    <p>年間相談件数</p>
+                    <p class="detail-text"><span>1000</span>件</p>
+                </div>
+                <div class="detail-item">
+                    <p>年収アップ平均額</p>
+                    <p class="detail-text"><span>200</span>万円</p>
+                </div>
+                <div class="detail-item">
+                    <p>転職満足度</p>
+                    <p class="detail-text"><span>96.2</span>%</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="service" id="service-info">
         <section class="service-strength">
             <div class="strength-header">
-                <h3 class="color-blue">Strength</h3>
-                <h2>薬剤師転職エージェントの３つの強み</h2>
+                <h3 class="color-main">Strength</h3>
+                <h2>年収600万以上が可能となる5つの強み</h2>
             </div>
             <div class="strength-contents">
                 <div class="strength-content">
@@ -39,7 +62,7 @@
                         alt="非公開求人"
                     />
                     <p>
-                    <span>薬局経営者</span>だからできる<span>条件交渉</span>(年収・雇用条件等)
+                    薬局経営ノウハウを活かした<span>雇用条件等の交渉</span>
                         </p>
                 </div>
                 <div class="strength-content">
@@ -48,152 +71,33 @@
                         alt="非公開求人"
                     />
                     <p>
-                        <span>薬局オーナー薬剤師</span>への採用あり
+                        <span>自社オーナー薬局薬剤師</span>への積極採用
+                    </p>
+                </div>
+                <div class="strength-content">
+                    <img
+                        src="<?php echo get_template_directory_uri() ?>/IMAGE/icon_strength4.png"
+                        alt="非公開求人"
+                    />
+                    <p>
+                        薬局経営企業が提供する<span>上質なキャリア相談</span>
+                    </p>
+                </div>
+                <div class="strength-content">
+                    <img
+                        src="<?php echo get_template_directory_uri() ?>/IMAGE/icon_strength5.png"
+                        alt="非公開求人"
+                    />
+                    <p>
+                        転職後にも続く<span>幅広いキャリアサポート</span>
                     </p>
                 </div>
             </div>
-            <div class="strength-button">
-                <a href="#matter-info" class="button-blue">求人情報はこちら　></a>
-                <a href="#form-info" class="button-white">お問い合わせ　></a>
-            </div>
-        </section>
-        <section class="service-feature">
-        <div class="feature">
-                <h3 class="color-blue">Features</h3>
-                <h2>さらに詳しく5つの特徴</h2>
-                <div class="feature-contents">
-                    <div class="feature-content flex">
-                        <div class="feature">
-                            <h3 class="point">Point1</h3>
-                            <h3>経営者ならではの条件交渉術</h3>
-                            <p>弊社では薬局経営をしていることから、「雇用側が求める薬剤師の条件」と「薬剤師が求める雇用側の条件」を把握しており、その知見を活かして雇用条件等の交渉が可能です</p>
-                        </div>
-                        <img 
-                            src="<?php echo get_template_directory_uri() ?>/IMAGE/feature1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="feature-content flex">
-                        <img
-                            src="<?php echo get_template_directory_uri() ?>/IMAGE/feature2.png"
-                            alt=""
-                        />
-                        <div class="feature">
-                            <h3 class="point">Point2</h3>
-                            <h3>薬局オーナー薬剤師への採用あり</h3>
-                            <p>グループ会社にて薬局開業を行なっているため、「オーナー薬剤師から経営マインドを学びたい方」「将来独立を考えている方」「オーナー薬剤師と一緒に仕事をしたい方」に向けた採用も行なっております」
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-content flex">
-                        <div class="feature">
-                            <h3 class="point">Point3</h3>
-                            <h3>転職後にも幅広いキャリアサポート</h3>
-                            <p>このページからお問い合わせし、転職された方限定で将来的に薬局開業の「開業資金のサポート」「コンサルタント料の減額」など様々なサポートを受けることが可能です。</p>
-                        </div>
-                        <img 
-                            src="<?php echo get_template_directory_uri() ?>/IMAGE/feature3.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="feature-content flex">
-                        <img
-                            src="<?php echo get_template_directory_uri() ?>/IMAGE/feature4.png"
-                            alt=""
-                        />
-                        <div class="feature">
-                            <h3 class="point">Point4</h3>
-                            <h3>非公開求人が多い</h3>
-                            <p>非公開求人のメリットは「エリアマネージャークラスの求人がある」「多くの求人情報が得られる」といったメリットに加え、高収（年収600万円〜）高時給（2500円〜）の求人もご紹介できます。</p>
-                        </div>
-                    </div>
-                    <div class="feature-content flex">
-                        <div class="feature">
-                            <h3 class="point">Point5</h3>
-                            <h3>転職祝い金最大30万進呈</h3>
-                            <p>入社が確定した段階でお祝い金の進呈となります。<br>
-                            （登録→面接→就職→入社→お祝い金）</p>
-                        </div>
-                        <img
-                            src="<?php echo get_template_directory_uri() ?>/IMAGE/feature5.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-        </section>
-        <section class="banner">
-            <div class="banner-text">
-                <h2>まずはお気軽にご相談ください</h2>
-                <p>
-                    30秒で簡単お申し込み!<br>
-                    転職に悩んでいる方は、相談のみのお問い合わせも可能です。
-                </p>
-                <a href="">ご相談はこちらから　></a>
-            </div>
-        </div>
-        </section>
-        <section class="reason" id="reason">
-        <div class="reason-header">
-            <h3 class="color-blue">Reason for choosing</h3>
-            <h2>多くの薬剤師に選ばれる理由</h2>
-        </div>
-        <div class="reason-container">
-            <div class="reason-content">
-                <p class="header1">Online</p>
-                <div class="content-container flex">
-                    <div class="reason-text">
-                        <h3>遠方の方でも<br>
-                            オンライン面談でスピーディーに<br>
-                            丁寧に対応いたします
-                        </h3>
-                        <p>一人一人と丁寧に向き合う転職相談で、ご希望を実現する方法やお悩み得お解決する方法を私たちが一緒に考え、満足できる職場に巡り会えるようにサポートいたします。</p>
-                    </div>
-                    <img class="img-size1"
-                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason1.png"
-                        alt=""
-                    />
-                </div>
-            </div>
-            <div class="reason-content ">
-                <p class="header2">Reserch</p>
-                <div class="content-container flex">
-                    <img class="img-size2"
-                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason2.png"
-                        alt=""
-                    />
-                    <div class="reason-text2">
-                        <h3>最終面接の際は<br>
-                            全国各地、弊社エージェントが<br>
-                            同行いたします
-                        </h3>
-                        <p>最終面接の際は、採用確度を上げるために全国各地弊社エージェントが同行し、最後まで誠意をもって対応いたします。また、当社の転職サービスは全国各地、エリア状況を詳しく把握していることが特徴です。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="reason-content">
-                <p class="header3">Try</p>
-                <div class="content-container flex">
-                    <div class="reason-text">
-                        <h3>転職先に不安がある方は、<br>
-                            お試しで勤務できる<br>
-                            「紹介予定派遣」を活用できます
-                        </h3>
-                        <p>転職の際、職場、人間関係、仕事内容に不満がある方は、お試しで就職予定先に派遣勤務し、仕事先と薬剤師さん双方合意で就職できる「紹介予定派遣」を活用できます。
-                        </p>
-                    </div>
-                    <img class="img-size3"
-                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason3.png"
-                        alt=""
-                    />
-                </div>
-            </div>
-        </div>
+        </section>  
     </section>
     <section class="matter" id="matter-info">
         <div class="matter-header">
-            <h3 class="color-blue">Offer information</h3>
+            <h3 class="color-main">Offer information</h3>
             <h2>注目の求人情報</h2>
             <h3>〇〇では9000件を越える案件を取り扱っています</h3>
             <div class="matter-button">
@@ -265,9 +169,157 @@
             
         </div>
     </section>
+    <section class="value">
+        <div class="value-container">
+            <div class="value-header">
+                <h3 class="color-main">Value</h3>
+                <h2>年収が上がる３つの仕組み</h2>
+                <h3>薬転エージェントを利用することで転職後の年収アップが見込めます。</h3>
+            </div>
+            <div class="value-items flex">
+                <div class="value-item">
+                    <img src="<?php echo get_template_directory_uri() ?>/IMAGE/value-item1.png" alt="">
+                    <p class="item-header">ご自身の年収相場を査定して<br>年収アップ</p>
+                    <p class="item-text">ひとえに薬剤師といっても様々なご経験や知識、知見などによって年収は大きく変わります。ご自身の年収相場を査定して本来貰える年収を把握することは、キャリアアップ転職する上で重要なポイントです。</p>
+                </div>
+                <div class="value-item">
+                    <img src="<?php echo get_template_directory_uri() ?>/IMAGE/value-item2.png" alt="">
+                    <p class="item-header">高収入案件の紹介で<br>年収アップ</p>
+                    <p class="item-text">大手薬局などで長く働いても給与は上がらず悩んでいる薬剤師の方々は大勢います。薬転エージェントでは高収入求人を多く抱えているため、ご相談いただいた求職者の方々の中には260万円も年収アップした方もいます。</p>
+                </div>
+                <div class="value-item">
+                    <img src="<?php echo get_template_directory_uri() ?>/IMAGE/value-item3.png" alt="">
+                    <p class="item-header">最終条件交渉で<br>年収アップ</p>
+                    <p class="item-text">弊社は薬局経営をしているため、雇用側が求める薬剤師の条件と薬剤師が求める雇用側の条件を把握しております。年収を含めた条件交渉を専任のエージェントが行ないます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flow" id="flow-info">
+        <div class="flow-header">
+            <h3 class="color-main">Flows</h3>
+            <h2>転職までの流れ</h2>
+            <h3>ご相談から面接、終業後までのフローを紹介いたします</h3>
+        </div>
+        <div class="flow-contents flex">
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❶</span> お問い合わせ</h3>
+                    <p>お申し込みフォームから、お問い合わせください。お客様情報を確認後、ご連絡致します。</p>
+                </div>
+            </div>
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❷</span> キャリアプランニング</h3>
+                    <p>ご自身の理想の雇用条件、仕事内容、年収・給料アップを専属キャリアカウンセラーがヒアリングし最適なキャリアプランニングを実施致します。</p>
+                </div>
+            </div>
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❸</span> 書類添削・面接練習</h3>
+                    <p>履歴書や職務経歴書等の書類の添削、面接での細かい所作や自己紹介等自前に必要な受け答えの練習など、親身にサポートします。</p>
+                </div>
+            </div>
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❹</span> 転職先企業の紹介</h3>
+                    <p>常に5000件ほどある有効求人からご自身のキャリアビジョンに沿った最適な転職先を選定し、ご提案致します。</p>
+                </div>
+            </div>
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❺</span> 年収交渉</h3>
+                    <p>ご自身のプロフィール・経歴・スキルなどから、年収が相場以下にならないように先方企業に交渉致します。</p>
+                </div>
+            </div>
+            <div class="flow-content flex">
+                <div class="flow-text">
+                    <h3><span>❻</span> アフターフォロー</h3>
+                    <p>就業後も相談を承ります。就業先でのキャリアアップやお困りごとなど、より働きやすくなるようにサポート致します。</p>
+                </div>
+            </div>
+        </div>
+        <section class="banner">
+            <div class="banner-text">
+                <h2>最大30万円</h2>
+                <h3>転職祝い金プレゼント</h3>
+                <p>まずはお気軽にご相談ください。</p>
+                <a href="#form-info"><i class="fa fa-commenting-o" aria-hidden="true"></i>    ご相談はこちらから</a>
+            </div>
+        </section>
+    </section>
+    <section class="reason" id="reason">
+        <div class="reason-header">
+            <h3 class="color-main">Reason for choosing</h3>
+            <h2>多くの薬剤師に選ばれる理由</h2>
+        </div>
+        <div class="reason-container">
+            <div class="reason-content">
+                <p class="header1">Online</p>
+                <div class="content-container flex">
+                    <div class="reason-text">
+                        <h3>遠方の方でも<br>
+                            オンライン面談でスピーディーに<br>
+                            丁寧に対応いたします
+                        </h3>
+                        <p>一人一人と丁寧に向き合う転職相談で、ご希望を実現する方法やお悩み得お解決する方法を私たちが一緒に考え、満足できる職場に巡り会えるようにサポートいたします。</p>
+                    </div>
+                    <img class="img-size1"
+                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason1.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="reason-content ">
+                <p class="header2">Reserch</p>
+                <div class="content-container flex">
+                    <img class="img-size2"
+                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason2.png"
+                        alt=""
+                    />
+                    <div class="reason-text2">
+                        <h3>最終面接の際は<br>
+                            全国各地、弊社エージェントが<br>
+                            同行いたします
+                        </h3>
+                        <p>最終面接の際は、採用確度を上げるために全国各地弊社エージェントが同行し、最後まで誠意をもって対応いたします。また、当社の転職サービスは全国各地、エリア状況を詳しく把握していることが特徴です。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason-content">
+                <p class="header3">Try</p>
+                <div class="content-container flex">
+                    <div class="reason-text">
+                        <h3>転職先に不安がある方は、<br>
+                            お試しで勤務できる<br>
+                            「紹介予定派遣」を活用できます
+                        </h3>
+                        <p>転職の際、職場、人間関係、仕事内容に不満がある方は、お試しで就職予定先に派遣勤務し、仕事先と薬剤師さん双方合意で就職できる「紹介予定派遣」を活用できます。
+                        </p>
+                    </div>
+                    <img class="img-size3"
+                        src="<?php echo get_template_directory_uri() ?>/IMAGE/reason3.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comparison">
+        <div class="comparison-header">
+            <h3 class="color-main">Comparison</h3>
+            <h2>他社と比較した優位性</h2>
+            <h3>弊社は他者と比べても手厚いサポートが充実しております。
+            </h3>
+        </div>
+        <div class="comparison-img">
+            <img src="<?php echo get_template_directory_uri() ?>/IMAGE/graph.png" alt="">
+        </div>
+    </section>
+
     <section class="user" id="user-info">
         <div class="user-header">
-            <h3 class="color-blue">Customer reviews</h3>
+            <h3 class="color-main">Customer reviews</h3>
             <h2>転職エージェント利用者の声</h2>
         </div>
         <div class="user-contents">
@@ -317,78 +369,9 @@
         </div>
         
     </section>
-    <section class="flow" id="flow-info">
-        <div class="flow-header">
-            <h3 class="color-blue">Flows</h3>
-            <h2>転職までの流れ</h2>
-            <h3>ご相談から面接、終業後までのフローを紹介いたします</h3>
-        </div>
-        <div class="flow-contents">
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon1.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>お問い合わせ</h3>
-                    <p>お申し込みフォームから、お問い合わせください。お客様情報を確認後、ご連絡致します。</p>
-                </div>
-            </div>
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon2.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>キャリアプランニング</h3>
-                    <p>ご自身の理想の雇用条件、仕事内容、年収・給料アップを専属キャリアカウンセラーがヒアリングし最適なキャリアプランニングを実施致します。</p>
-                </div>
-            </div>
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon3.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>書類添削・面接練習</h3>
-                    <p>履歴書や職務経歴書等の書類の添削、面接での細かい所作や自己紹介等自前に必要な受け答えの練習など、親身にサポートします。</p>
-                </div>
-            </div>
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon4.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>転職先企業の紹介</h3>
-                    <p>常に5000件ほどある有効求人からご自身のキャリアビジョンに沿った最適な転職先を選定し、ご提案致します。</p>
-                </div>
-            </div>
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon5.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>年収交渉</h3>
-                    <p>ご自身のプロフィール・経歴・スキルなどから、年収が相場以下にならないように先方企業に交渉致します。</p>
-                </div>
-            </div>
-            <div class="flow-content flex">
-                <img
-                    src="<?php echo get_template_directory_uri() ?>/IMAGE/icon6.png"
-                    alt=""
-                />
-                <div class="flow-text">
-                    <h3>アフターフォロー</h3>
-                    <p>就業後も相談を承ります。就業先でのキャリアアップやお困りごとなど、より働きやすくなるようにサポート致します。</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="question" id="question-info">
         <div class="question-header">
-            <h3 class="color-blue">Questions</h3>
+            <h3 class="color-main">Questions</h3>
             <h2>よくある質問</h2>
         </div>
         <div class="question-contents">
@@ -399,7 +382,7 @@
                 </div>
                 <div class="anser flex">
                     <h3 class="icon-normal">A</h3>
-                    <p>すべて無料でサービスを受けることができます。安心してご利用下さい。</p>
+                    <p>当サービスはご転職先の企業様からご紹介料として報酬をいただいているため、ご求職者様は全て無料でサービスを受けることができます。安心してご利用下さい。</p>
                 </div>
             </div>
             <div class="question-content">
@@ -436,7 +419,7 @@
     </section>
     <section class="form" id="form-info">
         <div class="form-header">
-            <h3 class="color-blue">Contact</h3>
+            <h3 class="color-main">Contact</h3>
             <h2>お問い合わせ</h2>
             <h3>簡単30秒で入力いただけます</h3>
         </div>

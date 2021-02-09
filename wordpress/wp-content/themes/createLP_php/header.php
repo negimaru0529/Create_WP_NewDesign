@@ -25,14 +25,14 @@
 <body>
     <header>
         <nav>
-            <a href="#top">TOP（ロゴ）</a>
+            <a class="logo" href="#top"><img src="<?php echo get_template_directory_uri() ?>/IMAGE/logo.png" alt=""><p>薬剤師専門の</br>転職エージェント</p></a>
             <ul>
                 <li><a href="#service-info">サービスについて</a></li>
                 <li><a href="#matter-info">求人情報</a></li>
                 <li><a href="#user-info">ユーザーの声</a></li>
                 <li><a href="#flow-info">転職の流れ</a></li>
                 <li><a href="#question-info">よくある質問</a></li>
-                <li><a href="#form-info" class="form-tab">お問い合わせ</a></li>
+                <li><a href="#form-info" class="form-tab"><i class="fa fa-commenting-o" aria-hidden="true"></i>無料相談はこちら</a></li>
             </ul>
             <div id="nav-drawer">
                 <input id="nav-input" type="checkbox" class="nav-unshown" />
